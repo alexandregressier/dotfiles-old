@@ -72,6 +72,9 @@ antigen bundle debian
 antigen bundle zsh-users/zsh-docker
 antigen bundle docker-compose
 
+antigen bundle kubectl
+antigen bundle minikube
+
 # Apply the Antigen configuration
 antigen apply
 
