@@ -1,4 +1,4 @@
-# ~/.profile: executed by the command interpreter for login shells.
+# ~/.profile
 
 # Source .bashrc
 [ -n "$BASH" ] && [ -f "$HOME/.bashrc" ] && source "$HOME/.bashrc"
