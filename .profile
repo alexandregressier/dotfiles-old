@@ -9,6 +9,7 @@ function prepend_path { [ -d "$1" ] && PATH="$1:$PATH"; }
 function append_path { [ -d "$1" ] && PATH="$PATH:$1"; }
 
 # Homes
+export SDKMAN_DIR="$HOME/.sdkman"
 
 # Path
 prepend_path "$HOME/.local/bin"

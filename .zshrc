@@ -75,6 +75,8 @@ antigen bundle docker-compose
 antigen bundle kubectl
 antigen bundle minikube
 
+antigen bundle matthieusb/zsh-sdkman
+
 # Apply the Antigen configuration
 antigen apply
 
@@ -92,3 +94,6 @@ unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
   export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 fi
+
+# SDKMAN!
+[ -f "$SDKMAN_DIR/bin/sdkman-init.sh" ] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
