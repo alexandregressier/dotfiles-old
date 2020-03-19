@@ -77,3 +77,12 @@ antigen apply
 # Aliases are meant to substitute something that already exists, in other cases define a function
 alias zshconfig="mate ~/.zshrc"
 alias dot="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+# GPG agent
+export GPG_TTY="$(tty)"
+
+# SSH agent
+unset SSH_AGENT_PID
+if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+fi
