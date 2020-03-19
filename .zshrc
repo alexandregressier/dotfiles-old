@@ -67,6 +67,7 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle command-not-found # Asks if you want to install the missing command
 
 antigen bundle git 
+antigen bundle debian 
 
 # Apply the Antigen configuration
 antigen apply
