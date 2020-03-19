@@ -15,6 +15,7 @@ prepend_path "$HOME/.local/bin"
 prepend_path "$HOME/bin"
 
 # Flags
+export ARCHFLAGS='-arch x86_64'
 export MAKEFLAGS="-j$(nproc)"
 
 # Editor
