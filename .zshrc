@@ -69,6 +69,9 @@ antigen bundle command-not-found # Asks if you want to install the missing comma
 antigen bundle git 
 antigen bundle debian 
 
+antigen bundle zsh-users/zsh-docker
+antigen bundle docker-compose
+
 # Apply the Antigen configuration
 antigen apply
 
