@@ -98,14 +98,15 @@
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Source Antigen
+# Antigen
+## Source Antigen
 source "$HOME/bin/antigen/antigen.zsh"
 
-# Use the oh-my-zsh provided by Antigen
+## Use the oh-my-zsh provided by Antigen
 antigen use oh-my-zsh
+
+## Apply the Antigen configuration
+antigen apply
 
 # Aliases
 alias dot="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-
-# Apply the Antigen configuration
-antigen apply
