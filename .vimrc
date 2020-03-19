@@ -1,3 +1,5 @@
+" ~/.vimrc
+
 call plug#begin('~/.vim/plugged')
 
 " Plugins
