@@ -105,6 +105,13 @@ source "$HOME/bin/antigen/antigen.zsh"
 ## Use the oh-my-zsh provided by Antigen
 antigen use oh-my-zsh
 
+## Plugins
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+
+antigen bundle git 
+
 ## Apply the Antigen configuration
 antigen apply
 
