@@ -93,6 +93,9 @@ antigen bundle docker-compose
 antigen bundle kubectl
 antigen bundle minikube
 
+antigen bundle gradle
+antigen bundle mvn
+
 antigen bundle matthieusb/zsh-sdkman
 
 # Apply the Antigen configuration
