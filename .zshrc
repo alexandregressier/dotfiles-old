@@ -105,6 +105,9 @@ source "$HOME/bin/antigen/antigen.zsh"
 ## Use the oh-my-zsh provided by Antigen
 antigen use oh-my-zsh
 
+## Themes
+antigen theme bhilburn/powerlevel9k powerlevel9k
+
 ## Plugins
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
