@@ -21,3 +21,6 @@ export MAKEFLAGS="-j$(nproc)"
 # Editor
 export EDITOR="$(which vim)"
 export VISUAL="$(which vim)"
+
+# Man
+MANPATH="/usr/local/man:$MANPATH"
