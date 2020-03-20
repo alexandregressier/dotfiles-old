@@ -95,6 +95,7 @@ antigen bundle minikube
 
 antigen bundle gradle
 antigen bundle mvn
+antigen bundle sbt
 
 antigen bundle matthieusb/zsh-sdkman
 
