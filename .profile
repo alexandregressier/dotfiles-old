@@ -21,6 +21,8 @@ prepend_path "$HOME/bin"
 append_path "$GRAALVM_HOME/bin"
 append_path "$DOTTY_HOME/bin"
 
+append_path "$HOME/.crc/bin"
+
 # Flags
 export ARCHFLAGS='-arch x86_64'
 export MAKEFLAGS="-j$(nproc)"
