@@ -12,12 +12,14 @@ function append_path { [ -d "$1" ] && PATH="$PATH:$1"; }
 export SDKMAN_DIR="$HOME/.sdkman"
 export GRAALVM_HOME="$SDKMAN_DIR/candidates/java/current"
 export JAVA_HOME="$GRAALVM_HOME"
+export DOTTY_HOME="$HOME/.local/bin/dotty"
 
 # Path
 prepend_path "$HOME/.local/bin"
 prepend_path "$HOME/bin"
 
 append_path "$GRAALVM_HOME/bin"
+append_path "$DOTTY_HOME/bin"
 
 # Flags
 export ARCHFLAGS='-arch x86_64'

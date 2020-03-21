@@ -92,6 +92,7 @@ antigen bundle docker-compose
 
 antigen bundle kubectl
 antigen bundle minikube
+antigen bundle chmouel/oh-my-zsh-openshift
 
 antigen bundle gradle
 antigen bundle mvn
