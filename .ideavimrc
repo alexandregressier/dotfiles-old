@@ -1,0 +1,38 @@
+let mapleader = " "
+
+# Mappings
+nmap <leader><leader> :action GotoAction<cr>
+
+nmap <leader>qq :action Exit<cr>
+
+nmap <leader>ff :action GotoFile<cr>
+nmap <leader>fr :action RecentFiles<cr>
+nmap <leader>ft :action ActivateProjectToolWindow<cr>
+
+nmap <leader>bb :action Switcher<cr>
+nmap <leader>bd :action CloseEditor<cr>
+
+nmap <leader>/ :action FindInPath<cr>
+nmap <leader>? :action ReplaceInPath<cr>
+
+nmap <leader>sl :action FileStructurePopup<cr>
+
+nmap <leader>w/ :action SplitVertically<cr>
+nmap <leader>w- :action SplitHorizontally<cr>
+
+nmap <leader>' :action ActivateTerminalToolWindow<cr>
+nmap <leader>" :action ActivateServicesToolWindow<cr>
+
+nmap == :action ReformatCode<cr>
+
+nmap <leader>ciw :action RenameElement<cr>
+nmap <leader>cif :action ChangeSignature<cr>
+
+nmap <leader>is :action InsertLiveTemplate<cr>
+
+nmap <leader>; :action CommentByLineComment<cr>
+
+
+" Plugins
+set surround
+set ideajoin
