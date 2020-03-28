@@ -24,6 +24,8 @@ append_path "$DOTTY_HOME/bin"
 
 append_path "$HOME/.crc/bin"
 
+append_path '/usr/lib/dart/bin'
+
 # Flags
 export ARCHFLAGS='-arch x86_64'
 export MAKEFLAGS="-j$(nproc)"
