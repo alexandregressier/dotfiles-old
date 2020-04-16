@@ -1,6 +1,6 @@
 let mapleader = " "
 
-# Mappings
+" Mappings
 nmap <leader><leader> :action GotoAction<cr>
 
 nmap <leader>qq :action Exit<cr>
