@@ -1,6 +1,10 @@
-let mapleader = " "
+" Plugins
+set surround
+set ideajoin
 
 " Mappings
+let mapleader = " "
+
 nmap <leader><leader> :action GotoAction<cr>
 
 nmap <leader>qq :action Exit<cr>
@@ -31,8 +35,3 @@ nmap <leader>cif :action ChangeSignature<cr>
 nmap <leader>is :action InsertLiveTemplate<cr>
 
 nmap <leader>; :action CommentByLineComment<cr>
-
-
-" Plugins
-set surround
-set ideajoin
