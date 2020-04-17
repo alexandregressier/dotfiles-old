@@ -14,6 +14,7 @@ export GRAALVM_HOME="$SDKMAN_DIR/candidates/java/current"
 export JAVA_HOME="$GRAALVM_HOME"
 export DOTTY_HOME="$HOME/.local/bin/dotty"
 export M2_HOME="$SDKMAN_DIR/candidates/maven/current"
+export CONDA_PREFIX="$HOME/bin/anaconda3"
 
 # Path
 prepend_path "$HOME/.local/bin"

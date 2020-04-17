@@ -120,3 +120,16 @@ fi
 
 # SDKMAN!
 [ -f "$SDKMAN_DIR/bin/sdkman-init.sh" ] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+
+# Anaconda
+__conda_setup="$("$CONDA_PREFIX/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "$CONDA_PREFIX/etc/profile.d/conda.sh" ]; then
+        source "$CONDA_PREFIX/etc/profile.d/conda.sh"
+    else
+        prepend_path "$CONDA_PREFIX/bin"
+    fi
+fi
+unset __conda_setup
