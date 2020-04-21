@@ -9,6 +9,7 @@ function prepend_path { [ -d "$1" ] && PATH="$1:$PATH"; }
 function append_path { [ -d "$1" ] && PATH="$PATH:$1"; }
 
 # Homes
+export CHROME_BIN="$(which chromium)"
 export SDKMAN_DIR="$HOME/.sdkman"
 export GRAALVM_HOME="$SDKMAN_DIR/candidates/java/current"
 export JAVA_HOME="$GRAALVM_HOME"
