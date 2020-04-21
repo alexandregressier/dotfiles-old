@@ -16,6 +16,7 @@ export JAVA_HOME="$GRAALVM_HOME"
 export DOTTY_HOME="$HOME/.local/bin/dotty"
 export M2_HOME="$SDKMAN_DIR/candidates/maven/current"
 export CONDA_PREFIX="$HOME/bin/anaconda3"
+export CARGO_HOME="$HOME/.cargo"
 
 # Path
 prepend_path "$HOME/.local/bin"
@@ -27,6 +28,8 @@ append_path "$DOTTY_HOME/bin"
 append_path "$HOME/.crc/bin"
 
 append_path '/usr/lib/dart/bin'
+
+prepend_path "$CARGO_HOME/bin"
 
 # Flags
 export ARCHFLAGS='-arch x86_64'
