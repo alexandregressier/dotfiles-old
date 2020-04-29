@@ -94,6 +94,7 @@ antigen bundle kubectl
 antigen bundle minikube
 antigen bundle chmouel/oh-my-zsh-openshift
 
+antigen bundle jackwish/bazel
 antigen bundle gradle
 antigen bundle mvn
 antigen bundle sbt
