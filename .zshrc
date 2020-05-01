@@ -107,9 +107,10 @@ antigen apply
 
 # Aliases
 # Aliases are meant to substitute something that already exists, in other cases define a function
-alias zshconfig="mate ~/.zshrc"
+alias zshconfig='mate ~/.zshrc'
 alias dot="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-alias diff="diff --color"
+alias diff='diff --color'
+alias code='code-insiders'
 
 # GPG agent
 export GPG_TTY="$(tty)"
