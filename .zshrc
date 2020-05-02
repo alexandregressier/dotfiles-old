@@ -142,3 +142,7 @@ else
     [ -f "$conda_script" ] && source "$conda_script" || prepend_path "$CONDA_PREFIX/bin"
 fi
 unset __conda_setup
+
+# Powerlevel10k prompt
+local p10k_prompt_script="$HOME/.p10k.zsh"
+[ -f "$p10k_prompt_script" ] && source "$p10k_prompt_script"
