@@ -122,15 +122,17 @@ if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
 fi
 
 # SDKMAN!
-[ -f "$SDKMAN_DIR/bin/sdkman-init.sh" ] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+local sdkman_script="$SDKMAN_DIR/bin/sdkman-init.sh"
+[ -f "$sdkman_script" ] && source "$sdkman_script"
 
 # Anaconda
 __conda_setup="$("$CONDA_PREFIX/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "$CONDA_PREFIX/etc/profile.d/conda.sh" ]; then
-        source "$CONDA_PREFIX/etc/profile.d/conda.sh"
+    local conda_script="$CONDA_PREFIX/etc/profile.d/conda.sh"
+    if [ -f "$conda_script" ]; then
+        source "$conda_script"
     else
         prepend_path "$CONDA_PREFIX/bin"
     fi
