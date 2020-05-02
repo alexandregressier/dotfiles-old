@@ -1,5 +1,9 @@
 # ~/.zshrc
 
+# Enable Powerlevel10k instant prompt
+local p10k_instant_script="${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+[ -f "$p10k_instant_script" ] && source "$p10k_instant_script"
+
 # Settings
 
 # Uncomment the following line to use case-sensitive completion.
@@ -75,8 +79,8 @@ source "$HOME/bin/antigen/antigen.zsh"
 # Use the oh-my-zsh provided by Antigen
 antigen use oh-my-zsh
 
-# Themes
-antigen theme bhilburn/powerlevel9k powerlevel9k
+# Powerlevel10k themes
+antigen theme romkatv/powerlevel10k
 
 # Plugins
 antigen bundle zsh-users/zsh-syntax-highlighting
