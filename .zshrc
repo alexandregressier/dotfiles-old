@@ -125,6 +125,10 @@ fi
 local sdkman_script="$SDKMAN_DIR/bin/sdkman-init.sh"
 [ -f "$sdkman_script" ] && source "$sdkman_script"
 
+# Nix
+local nix_script="$USER/.nix-profile/etc/profile.d/nix.sh"
+[ -f "$nix_script" ] && source "$nix_script"
+
 # Anaconda
 __conda_setup="$("$CONDA_PREFIX/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
