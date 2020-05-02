@@ -135,10 +135,6 @@ if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
     local conda_script="$CONDA_PREFIX/etc/profile.d/conda.sh"
-    if [ -f "$conda_script" ]; then
-        source "$conda_script"
-    else
-        prepend_path "$CONDA_PREFIX/bin"
-    fi
+    [ -f "$conda_script" ] && source "$conda_script" || prepend_path "$CONDA_PREFIX/bin"
 fi
 unset __conda_setup
