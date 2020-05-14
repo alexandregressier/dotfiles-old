@@ -4,6 +4,7 @@
 local p10k_instant_script="${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 [ -f "$p10k_instant_script" ] && source "$p10k_instant_script"
 
+
 # Settings
 
 # Uncomment the following line to use case-sensitive completion.
