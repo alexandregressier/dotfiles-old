@@ -8,6 +8,7 @@
 function prepend_path { [ -d "$1" ] && PATH="$1:$PATH"; }
 function append_path { [ -d "$1" ] && PATH="$PATH:$1"; }
 
+
 # Homes
 export CHROME_BIN="$(which chromium)"
 
@@ -20,6 +21,8 @@ export M2_HOME="$SDKMAN_DIR/candidates/maven/current"
 
 export CARGO_HOME="$HOME/.cargo"
 
+export DENO_INSTALL="$HOME/.deno"
+
 export CONDA_PREFIX="$HOME/bin/anaconda3"
 
 
@@ -30,9 +33,11 @@ prepend_path "$HOME/bin"
 append_path "$GRAALVM_HOME/bin"
 append_path "$DOTTY_HOME/bin"
 
+prepend_path "$HOME/.cabal/bin"
+
 prepend_path "$CARGO_HOME/bin"
 
-prepend_path "$HOME/.cabal/bin"
+prepend_path "$DENO_INSTALL/bin"
 
 append_path '/usr/lib/dart/bin'
 
