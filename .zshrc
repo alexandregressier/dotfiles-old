@@ -133,6 +133,10 @@ fi
 local sdkman_script="$SDKMAN_DIR/bin/sdkman-init.sh"
 [ -f "$sdkman_script" ] && source "$sdkman_script"
 
+# ghcup
+local ghcup_script="${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" 
+[ -f "$ghcup_script" ] && source "$ghcup_script" 
+
 # Nix
 local nix_script="$USER/.nix-profile/etc/profile.d/nix.sh"
 [ -f "$nix_script" ] && source "$nix_script"
